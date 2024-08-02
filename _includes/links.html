@@ -1,0 +1,7 @@
+<div class="bottom-bar">
+    {% for item in site.data.links %}
+        <img width="16" decoding="async" src="/assets/images/icons/external-link.png" class="crips-edges"><a href="{{ item.link }}">
+            {{ item.name }}
+        </a>
+    {% endfor %}
+</div>

@@ -1,2 +1,7 @@
 baseurl: /
 url: https://benjatk.com
+plugins:
+  - jekyll-feed
+
+feed:
+  posts_limit: 20

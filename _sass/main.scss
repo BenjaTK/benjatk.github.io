@@ -8,6 +8,8 @@ body {
     font-weight: 400;
     font-size: 109%;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .center-block {
@@ -23,6 +25,7 @@ body {
     max-width: 35rem;
     display: inline-block;
     text-align: left;
+    padding-right: 1em;
 }
 
 .post-date {
@@ -41,6 +44,7 @@ body {
 .outlinks a {
     padding: 6px;
 }
+
 
 .outlinks a:hover {
     color: #3f3f44;
@@ -125,4 +129,20 @@ a {
 
 a:hover {
     color: #111114;
+}
+
+
+.bottom-bar {
+    background-color: #d0d4d0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-bar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 6px;
 }
