@@ -64,6 +64,7 @@ body {
 }
 
 .post-content {
+    transition-duration: 0.1s;
     max-width: 40rem;
     text-align: justify;
     font-family: 'Lato', sans-serif;
@@ -71,12 +72,23 @@ body {
 }
 
 .post-content img {
-    display: inline-block;
-    align-self: center;
+
     max-width: 40rem;
+    
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media only screen and (max-width: 40rem) {
+    .post-content img {
+        width: 100%;
+    }
+
+    .post-content {
+        padding: 1rem;
+    }
 }
 
 h1, h2, h3, h4 {
