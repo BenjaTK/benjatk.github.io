@@ -42,10 +42,11 @@ body {
     padding: 6px;
 }
 
-a:hover {
+.outlinks a:hover {
     color: #3f3f44;
     opacity: 1.0;
 }
+
 
 .crisp-edges {
     image-rendering: pixelated;
@@ -63,14 +64,24 @@ a:hover {
 }
 
 .post-content {
-    max-width: 35rem;
+    max-width: 40rem;
     text-align: justify;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
 }
 
+.post-content img {
+    display: inline-block;
+    align-self: center;
+    max-width: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1, h2, h3, h4 {
     font-weight: 400;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .header {
@@ -96,5 +107,10 @@ h1, h2, h3, h4 {
 }
 
 a {
-    color: #2e2f3b;
+    color: #3f3f44;
+;
+}
+
+a:hover {
+    color: #111114;
 }
