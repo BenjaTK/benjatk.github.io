@@ -2,7 +2,7 @@
 body {
     background-color: #fbfffb;
     color: #3f3f44;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
@@ -12,9 +12,12 @@ body {
     padding: 0;
 }
 
+
+
 .center-block {
     text-align: center;
     display: inline-block;
+    
 }
 
 .blog {
@@ -117,7 +120,7 @@ body {
     }
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a {
     font-weight: 400;
     font-family: 'Pixelify Sans', sans-serif;
 }
@@ -155,10 +158,8 @@ a:hover {
 
 
 .bottom-bar {
-    background-color: #d0d4d0;
-    margin: 0;
+    position: absolute;
     padding: 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
