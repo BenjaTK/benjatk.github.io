@@ -12,6 +12,10 @@ body {
     padding: 0;
 }
 
+div {
+    transition-duration: 0.1s;
+}
+
 
 
 .center-block {
@@ -107,6 +111,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -157,15 +162,44 @@ a:hover {
 }
 
 
-.bottom-bar {
-    position: absolute;
-    padding: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 .bottom-bar a {
     display: inline-block;
     text-align: center;
-    padding: 14px 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    columns: 3;
+    
+}
+
+.game-thumb {
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0.9;
+    box-shadow: 4px 4px 0px #33334072 !important;
+    margin: 0;
+    height: 200px;
+}
+
+.game-thumb:hover {
+    opacity: 1.0;
+    transform: translateY(-0.5rem);
+    box-shadow: 4px 0.5rem 0px #33334072 !important;
+}
+
+.game-link {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+}
+
+.game-link img {
+    height: auto;
 }
