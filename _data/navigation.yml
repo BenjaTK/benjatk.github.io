@@ -1,9 +1,9 @@
 - name: Home
   link: /
-  icon: /assets/images/icons/home.png
+  icon: /assets/images/icons/home.svg
 - name: Games
   link: https://benjatk.itch.io/
-  icon: /assets/images/icons/games.png
+  icon: /assets/images/icons/games.svg
 - name: Blog
   link: /blog.html
-  icon: /assets/images/icons/blog.png
+  icon: /assets/images/icons/blog.svg

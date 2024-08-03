@@ -1,6 +1,6 @@
 <div class="outlinks">
     {% for item in site.data.navigation %}
-        <img width="16" decoding="async" src="{{ item.icon }}" class="crips-edges"><a href="{{ item.link }}" {% if page.url != item.link %}class="non-current"{% endif %}>
+        <img width="16" decoding="async" src="{{ item.icon }}"><a href="{{ item.link }}" {% if page.url != item.link %}class="non-current"{% endif %}>
             {{ item.name }}
         </a>
     {% endfor %}
