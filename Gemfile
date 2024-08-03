@@ -4,6 +4,6 @@ source "https://rubygems.org"
 
 # gem "rails"
 # gem "jekyll"
-gem "github-pages", "~> 231", group: :jekyll_plugins
+gem "github-pages", "~> 231"
 gem "webrick"
 gem "jekyll-feed"
