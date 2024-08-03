@@ -1,5 +1,11 @@
+title: BenjaTK
+description: My small place in the internet
+author:
+  twitter: BenjaTKDev
+
 baseurl: /
 url: https://benjatk.com
+
 plugins:
   - jekyll-feed
 
