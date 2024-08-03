@@ -34,9 +34,7 @@ body {
     margin-top: 0;
 }
 
-.post-date {
-    color: #565766;
-}
+
 
 .float-right {
     float: right;
@@ -67,24 +65,38 @@ body {
     margin: auto;
 }
 
+.post {
+    max-width: 40rem;
+    display: inline-block;
+    align-self: center;
+}
+
+.post-date {
+    color: #565766;
+}
+
 .post-header {
     padding-top: 32px;
-    max-width: 40rem;
     margin-bottom: 0;
+}
+
+.reading-time {
+    color: #565766;
+    opacity: 0.75;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .post-content {
     transition-duration: 0.1s;
-    max-width: 40rem;
     text-align: justify;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
 }
 
 .post-content img {
-
     max-width: 40rem;
-    
     height: auto;
     display: block;
     margin-left: auto;
@@ -96,8 +108,9 @@ body {
         width: 100%;
     }
 
-    .post-content {
-        padding: 1rem;
+    .post {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 

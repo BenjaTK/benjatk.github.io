@@ -16,11 +16,14 @@
   <body>
     <img width="16" decoding="async" src="/assets/images/icons/back.png" class="crips-edges"><a class="back-button" href="/blog.html" >Back</a>
     <br>
-    <h1 class="post-header center-block">{{ page.title }}</h1>
-    <br>
-    <p class="post-date center-block">{{ page.date | date_to_string }}</p>
-    <div class="content post-content">
-        {{ content }}
+      <div class="post">
+      <h1 class="post-header center-block">{{ page.title }}</h1>
+      <br>
+      <p class="post-date center-block">{{ page.date | date_to_string }}</p>
+      <p class="reading-time">{% include reading-time.html %}</p>
+      <div class="content post-content">
+          {{ content }}
+      </div>
     </div>
   </body>
 </html>
