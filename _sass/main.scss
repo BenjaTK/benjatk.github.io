@@ -1,8 +1,17 @@
+:root {
+    --background-color: #fbfffb;
+    --text-color: #3f3f44;
+    --text-color-gray: #565766;
+    --link-color-hover: #111114;
+    --game-thumb-shadow-color: #33334072;
+    --default-font-family: "Lato", sans-serif;
+    --special-font-family: 'Pixelify Sans', sans-serif;
+}
 
 body {
-    background-color: #fbfffb;
-    color: #3f3f44;
-    font-family: "Lato", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--default-font-family);
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
@@ -46,6 +55,7 @@ img + em {
 
 .excerpt {
     display: block;
+    color: var(--text-color-gray);
     opacity: 0.8;
     margin-top: -0.5lh;
 }
@@ -66,7 +76,7 @@ img + em {
 
 
 .outlinks a:hover {
-    color: #3f3f44;
+    color: var(--text-color);
     opacity: 1.0;
 }
 
@@ -87,7 +97,7 @@ img + em {
 }
 
 .post-date {
-    color: #565766;
+    color: var(--text-color-gray);
 }
 
 .post-header {
@@ -95,7 +105,7 @@ img + em {
 }
 
 .reading-time {
-    color: #565766;
+    color: var(--text-color-gray);
     opacity: 0.75;
     text-align: left;
     padding: 0;
@@ -105,8 +115,6 @@ img + em {
 .post-content {
     transition-duration: 0.1s;
     text-align: justify;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
 }
 
 .post-content img {
@@ -132,7 +140,7 @@ img + em {
 
 h1, h2, h3, h4, a {
     font-weight: 400;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: var(--special-font-family);
 }
 
 .header {
@@ -153,17 +161,17 @@ h1, h2, h3, h4, a {
 }
 
 .non-current {
-    color: #565766;
+    color: var(--text-color-gray);
     opacity: 0.9;
 }
 
 a {
-    color: #3f3f44;
+    color: var(--text-color);
 ;
 }
 
 a:hover {
-    color: #111114;
+    color: var(--link-color-hover);
 }
 
 
@@ -188,7 +196,7 @@ a:hover {
     box-sizing: border-box;
     overflow: hidden;
     opacity: 0.9;
-    box-shadow: 4px 4px 0px #33334072 !important;
+    box-shadow: 4px 4px 0px var(--game-thumb-shadow-color) !important;
     margin: 0;
     height: 200px;
 }
@@ -196,7 +204,7 @@ a:hover {
 .game-thumb:hover {
     opacity: 1.0;
     transform: translateY(-0.5rem);
-    box-shadow: 4px 0.5rem 0px #33334072 !important;
+    box-shadow: 4px 0.5rem 0px var(--game-thumb-shadow-color) !important;
 }
 
 .game-link {
