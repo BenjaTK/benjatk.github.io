@@ -5,9 +5,11 @@ author:
 
 baseurl: /
 url: https://benjatk.com
+permalink: /:categories/:year/:month/:day/:title
 
 plugins:
   - jekyll-feed
 
 feed:
   posts_limit: 20
+
