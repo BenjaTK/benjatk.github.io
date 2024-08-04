@@ -25,7 +25,7 @@ I even got contacted by 2 websites to publish the game, one of which didn't go t
 
 This one was made for the **Cozy Autumn Game Jam 2023**. It was my second time working on a team, with [**Kaboppel**](https://phil-o.itch.io/) and [**Kris**](https://dapper-kris.itch.io/). It's a short detective point-and-click adventure about figuring out the biggest mystery of all: where leaves go in autumn. 
 
-I'm really really proud of this one. Not only is the cast of characters great, I also have never been super confident working on teams. It was a great experience making it, so great it sparked a studio: [**Lilypaw Games**](https://lilypaw-games.itch.io/).
+I'm really really proud of this one. Not only is the cast of characters great, I also have never been super confident working on teams; except for this one. It was a great experience making it, so great it sparked a studio: [**Lilypaw Games**](https://lilypaw-games.itch.io/).
 
 Though development in Lilypaw Games HQ has been slow, we have been working on a bunch of prototypes together, and can't wait to share them.
 
