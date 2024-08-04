@@ -13,6 +13,7 @@ I've been doing this for about 4 years now, and it's been a blast (though not wi
 Probably my favorite game of mine. 
 
 ![Terraforma gameplay](https://img.itch.zone/aW1hZ2UvMTY3MDkxMi85OTU4MjE1LmdpZg==/347x500/L6Lwst.gif)
+*In Terraforma you build a world out of tiles that generate points based on the other tiles around them.*
 
 Made for the **Kenney Jam 2022**, I think the concept was pretty solid which is why I think it worked that well. It also made me realize that the market for idle games in itch.io is HUGE, most views I got were from the idle tag.
 
@@ -33,8 +34,10 @@ Though development in Lilypaw Games HQ has been slow, we have been working on a 
 A procedural generation addon for Godot 4, including support for 2D and 3D, chunk loading, a lot of customization, and more.
 
 ![Different types of generated terrain](https://github.com/BenjaTK/Gaea/raw/main/docs/assets/generators-showcase.png)
+*Some of the different types of terrain Gaea allows making.*
 
 I don't really remember why I made this. I was bored ig. But it skyrocketed into something much bigger than I would've expected. It got featured in YouTube videos, has almost 1k stars and has been constantly growing since I made it.
 
 [![How to Create Procedural Generation in Godot 4](https://github.com/BenjaTK/Gaea/raw/main/docs/assets/devworm-thumbnail.jpg)](https://youtu.be/oB1xsCcO9wI "How to Create Procedural Generation in Godot 4")
 [![10+2 AWESOME ADDONS for GODOT 4 by MrElipteach](https://github.com/BenjaTK/Gaea/raw/main/docs/assets/mrelipteach-thumbnail.jpg)](https://youtu.be/-FQNPCB7e3s?t=144&si=myv2OsGoLa7jiUfi "10+2 AWESOME ADDONS for GODOT 4 by MrElipteach")
+

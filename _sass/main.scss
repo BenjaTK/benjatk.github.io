@@ -16,7 +16,10 @@ div {
     transition-duration: 0.1s;
 }
 
-
+img + em {
+    text-align: center;
+    display: block;
+}
 
 .center-block {
     text-align: center;
@@ -107,6 +110,7 @@ div {
     margin-left: auto;
     margin-right: auto;
     border-radius: 3px;
+
 }
 
 @media only screen and (max-width: 40rem) {
