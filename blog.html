@@ -6,6 +6,16 @@ permalink: /blog/
 <div class="blog">
 <p>Here's an <a href="/feed.xml">Atom Feed</a> if you want to subscribe</p>
 <h1>Posts</h1>
+<h2>Pinned</h2>
+<ul class="blog-list">
+  {% for post in site.tags.pinned %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
+      <span class="excerpt">{{ post.excerpt }}</span>
+    </li>
+  {% endfor %}
+</ul>
+<h2>Other</h2>
 <ul class="blog-list">
   {% for post in site.posts %}
     <li>

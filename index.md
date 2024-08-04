@@ -19,9 +19,10 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
 # Latest Posts
 
 <ul class="blog-list">
-  {% for post in site.posts limit:2 %}
+  {% for post in site.posts limit:3 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
+      <span class="excerpt">{{ post.excerpt }}</span>
     </li>
   {% endfor %}
 </ul>

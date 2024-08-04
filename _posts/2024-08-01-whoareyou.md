@@ -2,6 +2,7 @@
 layout: post
 author: BenjaTK
 title: Who are you and what are you doing in my browser?
+tags: pinned
 ---
 
 Hey! I'm **BenjaTK** (j pronounced like the _h_ in _here_). I make **tiny freeware videogames** and publish them on [itch.io](https://benjatk.itch.io/). I've also made some addons for Godot that you can find on my [GitHub](https://github.com/BenjaTK).
