@@ -9,6 +9,10 @@
     --special-font-family: 'Pixelify Sans', sans-serif;
 }
 
+html {
+    background-color: var(--background-color);
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
