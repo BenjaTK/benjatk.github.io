@@ -90,11 +90,14 @@ img + em {
 
 
 .excerpt {
-    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     color: var(--text-color-gray);
     opacity: 0.8;
     margin-top: -0.5lh;
-    margin-bottom: 0;
+    margin-bottom: 0.5lh;
 }
 
 
