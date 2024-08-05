@@ -1,7 +1,11 @@
+
 <div class="bottom-bar">
     {% for item in site.data.links %}
-        <img width="16" decoding="async" src="/assets/images/icons/external-link.svg" class="crips-edges"><a href="{{ item.link }}">
+        <img width="16" decoding="async" src="/assets/images/icons/external-link.svg" class="crips-edges">
+        <a href="{{ item.link }}" target="_blank">
             {{ item.name }}
         </a>
     {% endfor %}
+    <br>
+    <a href="mailto:contact@benjatk.com">contact@benjatk.com</a>
 </div>

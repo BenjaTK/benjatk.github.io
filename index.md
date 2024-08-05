@@ -11,7 +11,7 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
 <div class="game-grid">
     {% for item in site.data.featured-projects %}
     <div class="game-thumb">
-        <a class="game-link" href="{{ item.link }}"><img height="200" width="252" src="{{ item.image }}"></a>
+        <a class="game-link" href="{{ item.link }}" target="_blank"><img height="200" width="252" src="{{ item.image }}"></a>
     </div>
     {% endfor %}
 </div>
@@ -30,5 +30,7 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
 
 <img width="32" decoding="async" src="assets/images/icons/hammer.svg" style="vertical-align:middle">This website is always a WIP! <img width="32" decoding="async" src="assets/images/icons/hammer.svg" style="vertical-align:middle">
 
+<br>
+<br>
 
 {% include links.html %}

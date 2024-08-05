@@ -1,5 +1,6 @@
 :root {
     --background-color: #fbfffb;
+    --background-color-gray: #ced3ce;
     --text-color: #3f3f44;
     --text-color-gray: #565766;
     --link-color-hover: #111114;
@@ -174,12 +175,20 @@ a:hover {
     color: var(--link-color-hover);
 }
 
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-color-gray);
+}
 
 .bottom-bar a {
-    display: inline-block;
+    
     text-align: center;
     padding-left: 6px;
     padding-right: 6px;
+    
 }
 
 .game-grid {
