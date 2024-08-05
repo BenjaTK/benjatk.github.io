@@ -5,7 +5,7 @@ author:
 
 baseurl: /
 url: https://benjatk.com
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
