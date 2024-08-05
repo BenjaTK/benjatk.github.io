@@ -2,5 +2,6 @@
 {{ content | number_of_words | minus: 180 }}
 {% endcapture %}
 {% unless words contains '-' %}
+{{ words | plus: 180 | append: ' words |'}}
 {{ words | plus: 150 | divided_by: 150 | append: ' minutes' }}
 {% endunless %}
