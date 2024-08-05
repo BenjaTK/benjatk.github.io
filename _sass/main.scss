@@ -77,11 +77,15 @@ img + em {
 .pinned-list li::before {
     content: url("/assets/images/icons/pinned.svg");
     display: inline-block;
-
     width: 32px;
     margin-left: -32px;
     vertical-align: middle;
     height: auto;
+    position: absolute;
+}
+
+.pinned-list li {
+    padding-bottom: 0.5rem;
 }
 
 
