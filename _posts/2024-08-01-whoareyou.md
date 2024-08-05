@@ -1,6 +1,5 @@
 ---
 layout: post
-author: BenjaTK
 title: Who are you and what are you doing in my browser?
 tags: pinned
 ---

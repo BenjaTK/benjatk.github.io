@@ -59,6 +59,32 @@ img + em {
     margin-top: 0;
 }
 
+.pinned-list {
+    list-style: none;
+}
+
+.pinned-list h3 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.pinned-list .post-date {
+    display: none;
+}
+
+.pinned-list li::before {
+    content: url("/assets/images/icons/pinned.svg");
+    display: inline-block;
+
+    width: 32px;
+    margin-left: -32px;
+    vertical-align: middle;
+    height: auto;
+}
+
+
 .excerpt {
     display: block;
     color: var(--text-color-gray);
