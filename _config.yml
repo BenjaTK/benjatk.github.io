@@ -9,7 +9,13 @@ permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 feed:
   posts_limit: 20
 
+twitter:
+  username: BenjaTKDev
+  card: summary
+
+logo: /favicon.png
