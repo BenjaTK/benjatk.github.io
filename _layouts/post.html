@@ -14,6 +14,7 @@
       <h1 class="post-header center-block">{{ page.title }}</h1>
       <br>
       <p class="post-date center-block">{{ page.date | date_to_string }}</p>
+      <p class="excerpt">{{ page.excerpt }}</p>
       <p class="reading-time">{% include reading-time.html %}</p>
       <div class="content post-content">
           {{ content }}
