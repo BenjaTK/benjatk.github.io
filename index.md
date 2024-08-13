@@ -20,10 +20,12 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
 
 <ul class="blog-list">
   {% for post in site.posts limit:3 %}
+    {% if post.hidden != true %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
       <span class="excerpt">{{ post.excerpt }}</span>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>
 
