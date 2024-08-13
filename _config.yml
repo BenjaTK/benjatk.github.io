@@ -1,11 +1,11 @@
 title: BenjaTK
 description: My small place in the internet
 author:
-  twitter: BenjaTKDev
+  twitter: benjatkdev
 
 baseurl: /
 url: https://benjatk.com
-permalink: /:categories/:title
+permalink: /:title
 
 plugins:
   - jekyll-feed
@@ -15,7 +15,14 @@ feed:
   posts_limit: 20
 
 twitter:
-  username: BenjaTKDev
+  username: benjatkdev
   card: summary
 
 logo: /favicon.png
+
+social:
+  name: BenjaTK
+  links:
+    - https://github.com/BenjaTK
+    - https://x.com/benjatkdev
+    - https://www.reddit.com/user/BenjaTKDev/

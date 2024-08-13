@@ -15,9 +15,11 @@ permalink: /blog/
 <h1>All Posts</h1>
 <ul class="blog-list">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
-    </li>
+    {% if post.hidden != true %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 </div>

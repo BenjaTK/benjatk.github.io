@@ -37,8 +37,7 @@ img + em {
 
 .center-block {
     text-align: center;
-    display: inline-block;
-    
+    display: block;
 }
 
 .blog {
@@ -97,6 +96,7 @@ img + em {
     color: var(--text-color-gray);
     opacity: 0.8;
     margin-bottom: 0.5lh;
+    text-align: left;
 }
 
 
@@ -238,6 +238,7 @@ a:hover {
     
 }
 
+
 .game-thumb {
     border-radius: 3px;
     box-sizing: border-box;
@@ -246,6 +247,18 @@ a:hover {
     box-shadow: 4px 4px 0px var(--game-thumb-shadow-color) !important;
     margin: 0;
     height: 200px;
+}
+
+.post-content .game-thumb img {
+    width: 100%;
+}
+
+.post-content .game-thumb {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
 .game-thumb:hover {
