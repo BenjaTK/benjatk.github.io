@@ -16,6 +16,8 @@
       <p class="post-date center-block">{{ page.date | date_to_string }}</p>
       <p class="excerpt">{{ page.excerpt }}</p>
       <p class="reading-time">{% include reading-time.html %}</p>
+      
+      <hr>
       <div class="content post-content">
           {{ content }}
           {% if page.categories.size != 0 %}

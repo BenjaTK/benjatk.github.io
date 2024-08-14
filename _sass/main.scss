@@ -13,6 +13,11 @@ html {
     background-color: var(--background-color);
 }
 
+hr {
+    color: var(--background-color-gray);
+    margin-top: 1rem;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -30,7 +35,7 @@ div {
     transition-duration: 0.1s;
 }
 
-img + em {
+img + em, video + em {
     text-align: center;
     display: block;
 }
@@ -156,7 +161,7 @@ img + em {
     text-align: justify;
 }
 
-.post-content img {
+.post-content img, .post-content video {
     max-width: 40rem;
     height: auto;
     display: block;
