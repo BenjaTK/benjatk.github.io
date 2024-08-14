@@ -5,3 +5,7 @@
 {{ words | plus: 180 | append: ' words |'}}
 {{ words | plus: 150 | divided_by: 150 | append: ' minutes' }}
 {% endunless %}
+{% if words contains '-' %}
+{{ content | number_of_words | append: ' words |' }}
+{{ '<1 minute' }}
+{% endif %}
