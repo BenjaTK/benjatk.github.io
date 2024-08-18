@@ -1,4 +1,4 @@
-<div class="outlinks">
+<div class="navigation">
     {% for item in site.data.navigation %}
         <img width="16" decoding="async" src="{{ item.icon }}"><a href="{{ item.link }}" {% if page.url != item.link %}class="non-current"{% endif %}>
             {{ item.name }}
