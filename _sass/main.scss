@@ -138,6 +138,8 @@ img + em, video + em {
     max-width: 40rem;
     display: inline-block;
     align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .post-date {
@@ -164,6 +166,7 @@ img + em, video + em {
 
 .post-content img, .post-content video {
     max-width: 40rem;
+    width: min(40rem, 100%);
     height: auto;
     display: block;
     margin-left: auto;
@@ -172,16 +175,44 @@ img + em, video + em {
 
 }
 
-@media only screen and (max-width: 40rem) {
-    .post-content img {
-        width: 100%;
-    }
-
-    .post {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    columns: 3;
+    
 }
+
+
+.game-thumb {
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0.9;
+    box-shadow: 4px 4px 0px var(--game-thumb-shadow-color) !important;
+    margin: 0;
+    height: 200px;
+}
+
+.post-content .game-thumb img {
+    width: 100%;
+}
+
+.post-content .game-thumb {
+    width: min(400px, 100%);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.game-thumb:hover {
+    opacity: 1.0;
+    transform: translateY(-0.5rem);
+    box-shadow: 4px 0.5rem 0px var(--game-thumb-shadow-color) !important;
+}
+
 
 h1, h2, h3, h4, a {
     font-weight: 400;
@@ -235,43 +266,7 @@ a:hover {
     
 }
 
-.game-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    columns: 3;
-    
-}
 
-
-.game-thumb {
-    border-radius: 3px;
-    box-sizing: border-box;
-    overflow: hidden;
-    opacity: 0.9;
-    box-shadow: 4px 4px 0px var(--game-thumb-shadow-color) !important;
-    margin: 0;
-    height: 200px;
-}
-
-.post-content .game-thumb img {
-    width: 100%;
-}
-
-.post-content .game-thumb {
-    width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-}
-
-.game-thumb:hover {
-    opacity: 1.0;
-    transform: translateY(-0.5rem);
-    box-shadow: 4px 0.5rem 0px var(--game-thumb-shadow-color) !important;
-}
 
 .game-link {
     display: block;
