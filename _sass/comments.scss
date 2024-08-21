@@ -1,0 +1,74 @@
+.comment-container {
+    display: flex;
+    position: relative;
+}
+
+.avatar {
+    width: 2.5rem;
+    border-radius: 2px;
+}
+
+.user {
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: -55px;
+}
+
+.author {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.comment-url{
+    line-height: 1px;
+    font-size: 0.7rem;
+}
+
+.github-comments h2 {
+    margin-left: 0;
+}
+ 
+.comment-content{
+   text-decoration: none;
+   font-size: calc(var(--font-size) * 0.9);
+}
+
+#gh-comments-list {
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comment-box {
+    background-color: var(--background-color-gray);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    flex: auto;
+    border-radius: 4px;
+    
+}
+
+.comment-box::before {
+    content: url(..//images/icons/comment-indicator.svg);
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -16px;
+    top: 10px;
+}
+
+
+#no-comments-found {
+    display: none;
+}
+
+.comment-date {
+    display: inline-block;
+    float: right;
+}
+

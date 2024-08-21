@@ -7,6 +7,9 @@
     --game-thumb-shadow-color: #33334072;
     --default-font-family: "Lato", sans-serif;
     --special-font-family: 'Pixelify Sans', sans-serif;
+    --blockquote-border-color: #30363d3d;
+    --font-size: 109%;
+    --font-weight: 400;
 }
 
 html {
@@ -21,8 +24,8 @@ body {
     font-family: var(--default-font-family);
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 400;
-    font-size: 109%;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -43,7 +46,7 @@ img + em, video + em {
 }
 
 h1, h2, h3, h4, a {
-    font-weight: 400;
+    font-weight: var(--font-weight);
     font-family: var(--special-font-family);
 }
 
@@ -54,6 +57,14 @@ a {
 a:hover {
     color: var(--link-color-hover);
 }
+
+blockquote {
+    border-left: .25em solid var(--blockquote-border-color);
+    margin: 1.5em 10px;
+    padding: 0.01em 10px;
+    color: var(--text-color-gray);
+}
+
 
 /* --- Utilities/Common Custom Classes --- */
 
@@ -228,6 +239,9 @@ a:hover {
     align-self: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    transition-duration: 0.1s;
+    text-align: justify;
+    margin-bottom: 4rem;
 }
 
 .post-header {
@@ -245,13 +259,7 @@ a:hover {
     padding: 0;
     margin: 0;
 }
-
-.post-content {
-    transition-duration: 0.1s;
-    text-align: justify;
-    margin-bottom: 4rem;
-}
-
+  
 .post-content img, .post-content video {
     max-width: 40rem;
     width: min(40rem, 100%);
@@ -273,3 +281,7 @@ a:hover {
     margin-right: auto;
     margin-bottom: 1rem;
 }
+
+
+/* --- Comments --- */
+
