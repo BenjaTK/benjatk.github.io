@@ -17,6 +17,8 @@ request.onload = function() {
 			document.getElementById( 'no-comments-found' ).style.display = 'block';
 		}
 	} else {
+        document.getElementById( 'cant-comment' ).style.display = 'block';
+        document.getElementById( 'leave-a-comment' ).style.display = 'none';
 		console.error( this );
 	}
 };
@@ -78,5 +80,6 @@ request.send();
 <h2>Comments</h2>
 <p id="leave-a-comment">Leave a comment on <a href="https://github.com/BenjaTK/benjatk.github.io/issues/{{ page.comments_id }}">this ticket</a>!</p>
 <ul id="gh-comments-list"></ul>
-<p id="no-comments-found">No comments found for this article.</p>
+<p id="cant-comment">You can't comment on this post :(</p>
+<p id="no-comments-found">No comments found for this post, be the first one to comment!</p>
 </div>

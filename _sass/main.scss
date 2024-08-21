@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "TooKool";
+    src: url("../fonts/TooKool 10x.ttf");
+}
+
 :root {
     --background-color: #fbfffb;
     --background-color-gray: #ced3ce;
@@ -6,9 +11,10 @@
     --link-color-hover: #111114;
     --game-thumb-shadow-color: #33334072;
     --default-font-family: "Lato", sans-serif;
-    --special-font-family: 'Pixelify Sans', sans-serif;
+    --special-font-family: 'TooKool', sans-serif;
     --blockquote-border-color: #30363d3d;
     --font-size: 109%;
+    --link-font-size: 112%;
     --font-weight: 400;
 }
 
@@ -48,10 +54,12 @@ img + em, video + em {
 h1, h2, h3, h4, a {
     font-weight: var(--font-weight);
     font-family: var(--special-font-family);
+    word-spacing: -0.2lh;
 }
 
 a {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: var(--link-font-size);
 }
 
 a:hover {
@@ -184,7 +192,6 @@ blockquote {
 }
 
 .blog h1, h2 {
-    margin: 0.2lh;
     margin-bottom: 0.05lh;
 }
 

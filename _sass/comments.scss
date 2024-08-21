@@ -25,10 +25,6 @@
     line-height: 1px;
     font-size: 0.7rem;
 }
-
-.github-comments h2 {
-    margin-left: 0;
-}
  
 .comment-content{
    text-decoration: none;
@@ -63,7 +59,7 @@
 }
 
 
-#no-comments-found {
+#no-comments-found, #cant-comment {
     display: none;
 }
 
