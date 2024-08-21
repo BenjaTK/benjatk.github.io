@@ -20,8 +20,12 @@
     margin: 0;
     display: inline-block;
     padding: 0;
+    text-decoration: none;
 }
 
+.author:hover {
+    text-decoration:underline;
+}
 .comment-url{
     line-height: 1px;
     font-size: 0.7rem;

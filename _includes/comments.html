@@ -39,8 +39,9 @@ function createCommentEl( response ) {
 	commentLink.classList.add( 'comment-url' );
 	commentLink.innerHTML = '#' + response.id + ' - ' + response.created_at;
 
-    let commentAuthor = document.createElement( 'h3' )
+    let commentAuthor = document.createElement( 'a' )
     commentAuthor.classList.add( 'author' );
+    commentAuthor.setAttribute( 'href', response.user.url.replace( 'api.github.com/users', 'github.com' ) )
     commentAuthor.innerText = response.user.login;
 
     let commentDate = document.createElement( 'div' );
