@@ -6,6 +6,7 @@
 .avatar {
     width: 2.5rem;
     border-radius: 2px;
+    display: none;
 }
 
 .user {
@@ -48,17 +49,6 @@
     
 }
 
-.comment-box::before {
-    content: url(..//images/icons/comment-indicator.svg);
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    left: -16px;
-    top: 10px;
-}
-
-
 #no-comments-found, #cant-comment {
     display: none;
 }
@@ -68,3 +58,19 @@
     float: right;
 }
 
+@media only screen and (min-width: 748px) {
+    .comment-box::before {
+        content: url(..//images/icons/comment-indicator.svg);
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -16px;
+        top: 10px;
+    }
+
+    .avatar {
+        display: block;
+    }
+  }
+  
