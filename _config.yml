@@ -6,6 +6,10 @@ author:
 baseurl: /
 url: https://benjatk.com
 permalink: /:title
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
 
 plugins:
   - jekyll-feed
