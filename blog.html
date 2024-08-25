@@ -13,8 +13,19 @@ permalink: /blog/
   {% endfor %}
 </ul>
 <h1>All Posts</h1>
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+
+{% for year in postsByYear %}
+<h2>{{ year.name }}'s posts</h2>
+
+{% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+{% for month in postsByMonth %}
+<h3>{{ month.name }}</h3>
 <ul class="blog-list">
-  {% for post in site.posts %}
+  {% for post in month.items %}
     {% if post.hidden != true %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
@@ -22,4 +33,6 @@ permalink: /blog/
     {% endif %}
   {% endfor %}
 </ul>
-</div>
+{% endfor %}
+
+{% endfor %}

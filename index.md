@@ -18,12 +18,12 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
 
 # Latest Posts
 
-<ul class="blog-list">
+<ul class="homepage-blog-list">
   {% for post in site.posts limit:3 %}
     {% if post.hidden != true %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
-      <span class="excerpt">{{ post.excerpt }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p class="excerpt">{{ post.excerpt }}</p>
     </li>
     {% endif %}
   {% endfor %}
