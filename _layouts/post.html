@@ -6,9 +6,11 @@
   {% seo title=false %}
   <head>
     {% include head.html %}
-</head>
+  </head>
   <body>
-    <img width="16" decoding="async" src="/assets/images/icons/back.svg" class="crips-edges"><a class="back-button" href="/blog/" >Back</a>
+    <script src="../assets/js/dark-mode.js"></script>
+    <svg width="16" shape-rendering="crispEdges" viewBox="0 -.5 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="m10 4h2m-4 1h4m-6 1h6m-8 1h8m-10 1h10m-12 1h12m-12 1h12m-10 1h10m-8 1h8m-6 1h6m-4 1h4m-2 1h2"/></svg><a class="back-button" href="/blog/" >Back</a>
     <br>
     <div class="post">
       <h1 class="post-header center-block">{{ page.title }}</h1>
@@ -20,27 +22,28 @@
       </div>
       <hr>
       <div class="page-content post-content">
+        
           {{ content }}
         </div>
       {% if page.categories.size != 0 %}
-        {% for category in page.categories %}
-          {% if site.categories[category].size > 1 %}
-          
-            <h1>More in the <u>{{ category | capitalize }}</u> category.</h1>
-            <ul class="blog-list">
-            {% for post in site.categories[category] limit: 5 %}
-              {% if post.hidden != true and post.url != page.url %}
-                <li>
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
+      {% for category in page.categories %}
+      {% if site.categories[category].size > 1 %}
+      
+      <h1>More in the <u>{{ category | capitalize }}</u> category.</h1>
+      <ul class="blog-list">
+        {% for post in site.categories[category] limit: 5 %}
+        {% if post.hidden != true and post.url != page.url %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
                 </li>
               {% endif %}
             {% endfor %}
             </ul>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% include comments.html %}
-      </ul>
-    </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% include comments.html %}
+          </ul>
+        </div>
   </body>
 </html>

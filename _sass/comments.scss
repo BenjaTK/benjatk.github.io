@@ -62,12 +62,17 @@
     float: right;
 }
 
+.comment-indicator path {
+    stroke: var(--background-color-gray);
+}
+
+.comment-indicator {
+    display: none;
+}
+
 @media only screen and (min-width: 748px) {
-    .comment-box::before {
-        content: url(..//images/icons/comment-indicator.svg);
+    .comment-indicator {
         display: block;
-        width: 16px;
-        height: 16px;
         position: absolute;
         left: -16px;
         top: 10px;

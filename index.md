@@ -23,15 +23,16 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
     {% if post.hidden != true %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <p class="excerpt">{{ post.excerpt }}</p>
+      <p class="excerpt unimportant">{{ post.excerpt }}</p>
     </li>
     {% endif %}
   {% endfor %}
 </ul>
 
 
-<img width="32" decoding="async" src="assets/images/icons/hammer.svg" style="vertical-align:middle">This website is always a WIP! <img width="32" decoding="async" src="assets/images/icons/hammer.svg" style="vertical-align:middle">
+This website is always a WIP!
 
+<br>
 <br>
 <br>
 
