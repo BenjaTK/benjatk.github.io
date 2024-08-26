@@ -229,7 +229,7 @@ blockquote {
     z-index: 1;
     opacity: 1;
     position: absolute;
-    right: 64px;
+    right: 16px;
     transform: translateY(-50%);
     opacity: 0;
     width: 32px;
@@ -241,7 +241,7 @@ blockquote {
 
 #dark-mode-button + label {
     position: absolute;
-    right: 64px;
+    right: 16px;
     transform: translateY(-50%);
 }
 
