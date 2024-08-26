@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+permalink: /gallery/
+---
+
+<p>My art, games, photography, all in one place. In no particular order.</p>
+
+<div class="gallery-grid">
+    {% for item in site.data.gallery-images %}
+    <div class="photo">
+        <img src="{{ item.img }}">
+        <div class="photo-description">
+            {% if item.link == null or item.link == "" %}
+                {{ item.description }}
+            {% else %}
+                <a href="{{ item.link }}" target="_blank">{{ item.description }}</a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

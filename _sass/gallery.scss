@@ -1,0 +1,50 @@
+.gallery-grid {
+    max-width: 60rem;
+    margin: auto;
+    columns: 3;
+    gap: 0.3em;
+    padding: 1em;
+}
+
+.gallery-grid > * {
+    break-inside: avoid;
+    width: 100%;
+    height: auto;
+    img {
+        width: 100%;
+    }
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-description {
+    background-color: var(--link-color-hover);
+    padding: 4px;
+    color: var(--background-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -24px);
+    opacity: 0;
+    transition: all 0.1s ease;
+    width: 100%;
+}
+
+.photo:hover > .photo-description {
+    opacity: 0.8;
+    transform: translate(-50%, -32px);
+}
+
+.photo-description a {
+    color: var(--background-color);
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
+    text-decoration: none;
+    word-spacing: 0lh;
+}
+
+.photo-description a:hover {
+    text-decoration:underline;
+}
