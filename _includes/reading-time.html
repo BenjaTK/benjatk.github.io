@@ -3,7 +3,7 @@
 {% endcapture %}
 {% unless words contains '-' %}
 {{ words | plus: 180 | append: ' words |'}}
-{{ words | plus: 150 | divided_by: 150 | append: ' minutes' }}
+~{{ words | plus: 150 | divided_by: 150 | append: ' minute(s)' }}
 {% endunless %}
 {% if words contains '-' %}
 {{ content | number_of_words | append: ' words |' }}
