@@ -8,3 +8,4 @@ gem "github-pages", "~> 231"
 gem "webrick"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
+gem 'jekyll-sitemap'

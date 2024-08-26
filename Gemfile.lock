@@ -279,6 +279,7 @@ DEPENDENCIES
   github-pages (~> 231)
   jekyll-feed
   jekyll-seo-tag
+  jekyll-sitemap
   webrick
 
 BUNDLED WITH
