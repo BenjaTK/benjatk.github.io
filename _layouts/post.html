@@ -13,9 +13,11 @@
     <div class="post">
       <h1 class="post-header center-block">{{ page.title }}</h1>
       <br>
-      <p class="post-date center-block">{{ page.date | date_to_string }}</p>
-      <p class="excerpt">{{ page.excerpt }}</p>
-      <p class="reading-time">{% include reading-time.html %}</p>
+      <p class="excerpt unimportant">{{ page.excerpt }}</p>
+      <div class="post-info unimportant">
+        {{ page.date | date_to_string }} | {% include reading-time.html %}
+        <span class="float-right"> {% for tag in page.tags %}{% if tag != "pinned" %} {{ tag }} {% endif %}{% endfor %} </span>
+      </div>
       <hr>
       <div class="page-content post-content">
           {{ content }}
