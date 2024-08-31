@@ -20,6 +20,7 @@ body {
     --game-thumb-shadow-color: #33334072;
     --blockquote-border-color: #30363d3d;
     --stroke-color: #3f3f44;
+    --lightbox-background-color: rgba(0, 2, 7, 0.7);
 }
 
 body.dark-mode {
@@ -31,6 +32,7 @@ body.dark-mode {
     --game-thumb-shadow-color: #11111172;
     --blockquote-border-color: #adb2be3d;
     --stroke-color: #f1f1f1;
+    --lightbox-background-color: rgba(0, 2, 7, 0.6);
 }
 
 body.dark-mode img {
@@ -58,6 +60,10 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+img {
+    border-radius: 4px;
 }
 
 hr {
@@ -101,6 +107,12 @@ blockquote {
 
 .unimportant {
     opacity: 0.8;
+}
+
+.pixel-font {
+    font-family: var(--special-font-family);
+    font-size: var(--link-font-size);
+    word-spacing: -0.2lh;
 }
 
 .navigation a {
@@ -201,6 +213,7 @@ blockquote {
     margin: 0 auto;
     display: inline-block;
 }
+
 
 .bottom-bar {
     position: fixed;
@@ -367,7 +380,6 @@ blockquote {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 3px;
 }
 
 .post-content .game-thumb img {
