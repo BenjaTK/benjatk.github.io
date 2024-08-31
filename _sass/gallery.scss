@@ -44,7 +44,7 @@
     opacity: 0;
     transition: all 0.1s ease;
     font-size: medium;
-    width: fit-content;
+    width: max-content;
 }
 
 .photo:hover > .photo-description {
