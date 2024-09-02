@@ -78,6 +78,7 @@ div {
 img + em, video + em {
     text-align: center;
     display: block;
+    font-size: medium;
 }
 
 h1, h2, h3, h4, a {
@@ -374,8 +375,8 @@ blockquote {
 }
   
 .post-content img, .post-content video {
-    max-width: 40rem;
-    width: min(40rem, 100%);
+    max-width: min(40rem, 100%);
+    
     height: auto;
     display: block;
     margin-left: auto;
