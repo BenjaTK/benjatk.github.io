@@ -1,9 +1,9 @@
 {% capture words %}
-{{ content | number_of_words | minus: 180 }}
+{{ content | number_of_words | minus: 240 }}
 {% endcapture %}
 {% unless words contains '-' %}
-{{ words | plus: 180 | append: ' words |'}}
-~{{ words | plus: 150 | divided_by: 150 | append: ' minute(s)' }}
+{{ words | plus: 240 | append: ' words |'}}
+~{{ words | plus: 220 | divided_by: 220 | append: ' minute(s)' }}
 {% endunless %}
 {% if words contains '-' %}
 {{ content | number_of_words | append: ' words |' }}
