@@ -15,4 +15,4 @@ Here are some photos I took:
 _Look at that lizard!!_
 
 
-Will definitely try to do this more often. Ended up really tired though, so not for a little while. Anyways, look at this lizard(?):
+Will definitely try to do this more often. Ended up really tired though, so not for a little while.
