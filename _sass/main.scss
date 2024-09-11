@@ -190,6 +190,17 @@ blockquote {
     margin: auto;
 }
 
+.subpage-content {
+    max-width: 40rem;
+    display: inline-block;
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition-duration: 0.1s;
+    text-align: justify;
+    margin-bottom: 4rem;
+}
+
 /* --- Home --- */
 
 .game-grid {
@@ -353,19 +364,10 @@ blockquote {
     display: inline-block;
 }
 
-.post {
-    max-width: 40rem;
-    display: inline-block;
-    align-self: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transition-duration: 0.1s;
-    text-align: justify;
-    margin-bottom: 4rem;
-}
+
 
 .post-header {
-    margin-bottom: 0;
+    margin-bottom: 0.6lh;
 }
 
 .post-info {

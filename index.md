@@ -29,6 +29,13 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
   {% endfor %}
 </ul>
 
+# Other Blogs
+
+Some blogs I recommend!
+
+{% include blogroll.html limit=3 %}
+[More...](/blogroll/)
+
 
 This website is always a WIP!
 

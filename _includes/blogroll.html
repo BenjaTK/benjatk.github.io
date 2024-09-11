@@ -1,0 +1,9 @@
+<ul class="homepage-blog-list">
+    {% assign sorted_blogroll = site.data.blogroll | sort: 'name' %}
+    {% for blogger in sorted_blogroll limit:include.limit %}
+      <li class="comment-box">
+        <h2 style="margin-top:0"><a href="{{ blogger.link }}">{{ blogger.name }}</a></h2>
+        <p class="unimportant" style="margin-bottom:0">{{ blogger.description }}</p>
+      </li>
+    {% endfor %}
+</ul>

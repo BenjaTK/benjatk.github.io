@@ -1,0 +1,18 @@
+- name: sirmilkman
+  link: https://www.sirmilkman.com/
+  description: "sirmilkman is a fellow gamedev and friend. In their site they post monthly roundups and have some photography and art."
+- name: Roman Hyacinths (Jaylus)
+  link: https://www.romanhyacinths.com/
+  description: "An artist and gamedev who's started a blog of her own!"
+- name: Joelchrono
+  link: https://joelchrono.xyz/
+  description: "A friend of mine and the person who introduced me to Jekyll. Writes about tech, games, and a lot of other stuff."
+- name: Kev Quirk
+  link: https://kevquirk.com/
+  description: "Only been following this guy for a little bit, but he writes about a bunch of stuff. From tech, through blogging, to life."
+- name: Derek Yu
+  link: https://makegames.tumblr.com/
+  description: "Probably needs no introduction for some, but he's the creator of Spelunky! In addition to these posts, he also wrote a book which I really recommend."
+- name: Rach Smith
+  link: https://rachsmith.com/
+  description: Similar to Kev, she writes about a bunch of different stuff.

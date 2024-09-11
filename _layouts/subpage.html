@@ -1,0 +1,25 @@
+---
+main-div-class: subpage-content
+---
+
+<!doctype html>
+<html>
+  {% seo title=false %}
+  <head>
+    {% include head.html %}
+  </head>
+<body>
+    <script src="../assets/js/dark-mode.js"></script>
+    {% if page.back-link != null %}
+        {% include back-button.html link=page.back-link %}
+    {% else %}
+        {% include back-button.html link=layout.back-link %}
+    {% endif %}
+
+    <div class="{{ layout.main-div-class }}">
+        <h1 class="post-header center-block">{{ page.title }}</h1>
+        <p class="excerpt unimportant">{{ page.excerpt }}</p>
+        {{ content }}
+    </div>
+</body>
+</html>
