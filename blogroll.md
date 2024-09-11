@@ -3,6 +3,7 @@ layout: subpage
 title: Recommended Blogs
 back-link: /
 excerpt: Some blogs I recommend, in alphabetical order!
+permalink: /blogroll/
 ---
 
 <hr>
