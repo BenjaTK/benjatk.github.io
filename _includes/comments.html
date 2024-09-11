@@ -54,7 +54,7 @@ function createCommentEl( response ) {
 	commentContents.innerHTML = response.body_html;
 
 	let comment = document.createElement( 'div' );
-    comment.classList.add('comment-box');
+    comment.classList.add('box');
 	
 	comment.setAttribute( 'data-author-avatar', response.user.avatar_url );
 	comment.setAttribute( 'data-user-url', response.user.url );

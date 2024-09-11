@@ -201,6 +201,16 @@ blockquote {
     margin-bottom: 4rem;
 }
 
+.box {
+    background-color: var(--background-color-gray);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    flex: auto;
+    border-radius: 4px;
+}
+
 /* --- Home --- */
 
 .game-grid {
