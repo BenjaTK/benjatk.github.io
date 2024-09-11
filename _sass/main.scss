@@ -102,6 +102,7 @@ blockquote {
     margin: 1.5em 10px;
     padding: 0.01em 10px;
     color: var(--text-color-gray);
+    
 }
 
 
@@ -209,6 +210,34 @@ blockquote {
     display: block;
     flex: auto;
     border-radius: 4px;
+}
+
+.task-list {
+    list-style: none;
+}
+
+.task-list-item-checkbox {
+    margin-right: 8px;
+}
+
+dl {
+    border: 3px solid var(--background-color-gray);
+    padding: 0.5em;
+}
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
 }
 
 /* --- Home --- */
