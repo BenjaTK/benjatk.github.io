@@ -373,12 +373,12 @@ dd {
 
 .pinned-list {
     list-style: none;
-    padding-left: 24px;
+    align-items: center;
 }
 
 .pinned-list li {
     position: relative;
-    text-align: left;
+    margin: auto;
     padding-left: 32px;
 }
 
