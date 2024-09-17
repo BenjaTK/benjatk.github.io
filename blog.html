@@ -4,35 +4,45 @@ title: Blog
 permalink: /blog/
 ---
 <div class="blog">
-<p>Here's an <a href="/feed.xml">Atom Feed</a> if you want to subscribe</p>
-<ul class="blog-list pinned-list">
-  {% for post in site.tags.pinned %}
+
+
+  <p>Here's an <a href="/feed.xml">Atom Feed</a> if you want to subscribe</p>
+  <ul class="blog-list pinned-list">
+    {% for post in site.tags.pinned %}
     <li>
       <svg width="32" shape-rendering="crispEdges" viewBox="0 -.5 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m6 2h2m-3 1h1m1 0h1m-4 1h1m3 0h1m-6 1h1m4 0h1m-7 1h1m6 0h2m-9 1h2m4 0h1m2 0h1m-8 1h2m1 0h1m2 0h1m-5 1h1m2 0h2m-5 1h1m1 0h2m1 0h1m-5 1h1m2 0h1m1 0h1m-2 1h2"/></svg><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
     </li>
+    {% endfor %}
+  </ul>
+  
+  <h1>Common Tags</h1>
+  {% for tag in site.data.common-tags %}
+  <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
   {% endfor %}
-</ul>
-<h1>All Posts</h1>
-
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 
-{% for year in postsByYear %}
-<h2>{{ year.name }}'s posts</h2>
+  <h1>All Posts</h1>
 
-{% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
-{% for month in postsByMonth %}
-<h3>{{ month.name }}</h3>
-<ul class="blog-list">
-  {% for post in month.items %}
-    {% if post.hidden != true %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
-      </li>
-    {% endif %}
+
+  {% for year in postsByYear %}
+  <h2>{{ year.name }}'s posts</h2>
+
+  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+  {% for month in postsByMonth %}
+  <h3>{{ month.name }}</h3>
+  <ul class="blog-list">
+    {% for post in month.items %}
+      {% if post.hidden != true %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endfor %}
-</ul>
-{% endfor %}
 
-{% endfor %}
+  {% endfor %}
+</div>

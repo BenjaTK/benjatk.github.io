@@ -14,8 +14,8 @@ back-link: /blog/
 </div>
 
 {% if page.categories.size != 0 %}
+  <hr>
   {% for category in page.categories %}
-
   {% if site.categories[category].size > 1 %}
     <h1>More in the <u>{{ category | capitalize }}</u> category.</h1>
     <ul class="blog-list">
