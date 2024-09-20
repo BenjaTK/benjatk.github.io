@@ -3,7 +3,6 @@ layout: post
 title: Prototyping for the sake of it
 excerpt: I tried making 10 prototypes in 10-ish days, but failed.
 tags: devlog gamedev challenge
-categories: devlogs
 comments_id: 8
 ---
 
