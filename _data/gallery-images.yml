@@ -1,15 +1,21 @@
-- img: ../assets/images/gallery/character-practice.png
+- img: /assets/images/gallery/princess-peach-redraw.png
+  description: NES Princess Peach redraw
+- img: /assets/images/gallery/character-practice.png
   description: Character Practice
-- img: ../assets/images/gallery/first-date.webp
+- img: /assets/images/gallery/first-date.webp
   description: First Date
   link: https://benjatk.itch.io/first-date
-- img: ../assets/images/gallery/BMO.png
+- img: /assets/images/gallery/BMO.png
   description: BMO !!
   link: https://youtu.be/JG52g3fC6Fc
 - img: https://img.itch.zone/aW1hZ2UvMTg2NzAzNi8xMDk3ODU4NS5naWY=/347x500/CarcEi.gif
   description: Itsy Bitsy
   link: https://benjatk.itch.io/itsy-bitsy
-- img: ../assets/images/gallery/o_pato.png
+- img: /assets/images/gallery/nes-mario-and-peach-redraw.gif
+  description: NES Mario and Peach redraw
+- img: /assets/images/gallery/mole.png
+  description: Cave exploration mockup
+- img: /assets/images/gallery/o_pato.png
   description: quack quack
 - img: https://img.itch.zone/aW1hZ2UvMTAyNzk0NC81OTQyNzk0LmdpZg==/347x500/64DLMO.gif
   description: Project Colors
@@ -17,13 +23,13 @@
 - img: https://img.itch.zone/aW1hZ2UvMTAyNzk0NC81ODYzNDk0LnBuZw==/347x500/bd9KYu.png
   description: Project Colors
   link: https://benjatk.itch.io/project-colors
-- img: ../assets/images/gallery/mole.png
-  description: Cave exploration mockup
-- img: ../assets/images/gallery/little_lord.png
+- img: /assets/images/gallery/mario-redraw.png
+  description: NES Mario redraw
+- img: /assets/images/gallery/little_lord.png
   description: Little Lord from Scrabdackle
-- img: ../assets/images/gallery/giraffe.webp
+- img: /assets/images/gallery/giraffe.webp
   description: The best picture I've ever taken
-- img: ../assets/images/gallery/17-01-2020.webp
+- img: /assets/images/gallery/17-01-2020.webp
   description: Plane
-- img: ../assets/images/gallery/18-01-2020.webp
+- img: /assets/images/gallery/18-01-2020.webp
   description: Flower
