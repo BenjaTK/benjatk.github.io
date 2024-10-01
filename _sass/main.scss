@@ -399,6 +399,17 @@ dd {
     margin: 0;
 }
 
+.beside-text {
+    display: block;
+    float: left;
+    max-height: 20rem;
+    min-width: 10rem;
+    padding-right: 1em;
+}
+
+.text-and-image {
+    display: flex;
+}
 
 .pinned-list li {
     padding-bottom: 0.5rem;
