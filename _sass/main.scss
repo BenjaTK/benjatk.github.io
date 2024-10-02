@@ -344,6 +344,7 @@ dd {
 
 .blog {
     text-align: center;
+    padding-bottom: 5lh;
 }
 
 .blog h1, h2 {
@@ -399,6 +400,21 @@ dd {
     margin: 0;
 }
 
+.pinned-list li {
+    padding-bottom: 0.5rem;
+}
+
+.tag-list-link {
+    padding: 0.2em;
+}
+
+/* --- Posts --- */
+
+.back-button {
+    padding-top: 1rem;
+    display: inline-block;
+}
+
 .beside-text {
     display: block;
     float: left;
@@ -410,19 +426,6 @@ dd {
 .text-and-image {
     display: flex;
 }
-
-.pinned-list li {
-    padding-bottom: 0.5rem;
-}
-
-/* --- Posts --- */
-
-.back-button {
-    padding-top: 1rem;
-    display: inline-block;
-}
-
-
 
 .post-header {
     margin-bottom: 0.6lh;
