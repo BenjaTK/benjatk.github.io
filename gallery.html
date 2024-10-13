@@ -3,13 +3,13 @@ layout: default
 title: Gallery
 permalink: /gallery/
 ---
-
+<script defer src="../assets/js/gallery.js"></script>
 <p>My art, games, photography, all in one place. In no particular order.</p>
 
 <div class="gallery-grid">
     {% for item in site.data.gallery-images %}
     <div class="photo">
-        <img src="{{ item.img }}">
+        <img src="{{ item.img }}" class="lightboxable">
         <div class="photo-description">
             {% if item.link == null or item.link == "" %}
                 {{ item.description }}
@@ -21,6 +21,6 @@ permalink: /gallery/
     {% endfor %}
 </div>
 
-<div id="lightbox" class="lightbox">
-    <img class="lightbox-image" src="../assets/images/gallery/BMO.png">
+<div id="lightbox">
+    <img id="lightbox-image" src="../assets/images/gallery/BMO.png">
 </div>
