@@ -53,11 +53,11 @@ If I had more time, I would've implemented procedural generation (I already port
 
 <video controls muted autoplay loop src="../../assets/images/2024-09-15-10-days-10-prototypes/2024-09-07_20-43-25.mp4" title="Title"></video>
 
-Not much to say about this one. It's pretty fun, and a solid mechanic. Not sure how'd you expand on it, honestly. I do want to point something out:
+Not much to say about this one. It's pretty fun, and a solid mechanic. Not sure how'd you expand on it, honestly.
 
-While, as you saw, most of these prototypes have a fair bit of polish, I do recommend and it's common practice to make prototypes without game juice. This way you can test if the actual mechanic is fun, and it's not just the extra polish that's making it *feel* fun.
-
-I've been testing these out without the polish aswell, it's just that they look better on video with it.
+> I want to point something out: While, as you saw, most of these prototypes have a fair bit of polish, I do recommend and it's common practice to make prototypes without game juice. This way you can test if the actual mechanic is fun, and it's not just the extra polish that's making it *feel* fun.
+>
+> I've been testing these out without the polish aswell, it's just that they look better on video with it.
 
 _Btw, play_ [Poinpy](https://www.devolverdigital.com/games/poinpy).
 
