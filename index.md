@@ -22,7 +22,7 @@ Hi! I'm **BenjaTK**. I make **fun little games**.
   {% for post in site.posts limit:3 %}
     {% if post.hidden != true %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date float-right">{{ post.date | date_to_string }}</span>
       <p class="excerpt unimportant">{{ post.excerpt }}</p>
     </li>
     {% endif %}
