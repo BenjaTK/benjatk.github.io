@@ -110,6 +110,9 @@ blockquote p {
     margin: 0.4em 0;
 }
 
+hr {
+    color: var(--blockquote-border-color);
+}
 
 /* --- Utilities/Common Custom Classes --- */
 
