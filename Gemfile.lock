@@ -202,9 +202,6 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jekyll-wikirefs (0.0.16)
-      jekyll
-      nokogiri (~> 1.13.3)
     jemoji (0.13.0)
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
@@ -281,7 +278,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-wikirefs
   webrick
 
 BUNDLED WITH
